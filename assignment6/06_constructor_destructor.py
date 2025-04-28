@@ -1,0 +1,17 @@
+#Constructors and Destructors
+#Assignment:
+#Create a class Logger that prints a message when an object is created (constructor) and another message when it is destroyed (destructor).
+
+class Logger:
+    def __init__(self):
+        print("Logger created")#prints msg when created
+    def __del__(self):
+        print("Logger destroyed") #prints msg when destroyed
+
+#creating object
+log=Logger()
+del log
+
+#output:
+#Logger created
+#Loger destroyed
